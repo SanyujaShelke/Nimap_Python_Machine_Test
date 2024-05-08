@@ -17,4 +17,3 @@ You can access the projects API at [http://127.0.0.1:8000/api/projects/](http://
 - List all projects
 - Create new projects
 - View details of individual projects
-

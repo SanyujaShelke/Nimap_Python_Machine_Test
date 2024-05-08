@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'ProjectManagementSystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'project_management_system',
+        'USER': 'root',
+        'PASSWORD': 'Sanyuja@7774',
+        'HOST': 'localhost',    # Or the hostname of your MySQL server
+        'PORT': '3306',         # Or the port MySQL is running on
     }
 }
+
 
 
 # Password validation
@@ -127,7 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
