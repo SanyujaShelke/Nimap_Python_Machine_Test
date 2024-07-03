@@ -18,7 +18,7 @@ You can access the projects API at [http://127.0.0.1:8000/api/projects/](http://
 - Create new projects
 - View details of individual projects
 
-- ## Support
+## Support
 For any questions or issues, please contact:
 - **Name**: Sanyuja Shelke
 - **Email**: shelkesanyuja7774@gmail.com
